@@ -4,19 +4,30 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
 }
 
 #gridContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 320px;
-    height: 320px;
     border: 2px solid #333;
 }
 
 .grid-item {
-    width: calc(100% / 16);
-    height: calc(100% / 16);
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
