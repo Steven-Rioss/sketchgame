@@ -27,7 +27,8 @@ function createGrid(numSquares) {
 
     gridItems.forEach(gridItem => {
         gridItem.addEventListener("mouseenter", (event) => {
-            event.target.style.backgroundColor = "purple";
+            const randomColor = Math.floor(Math.random()*16777215).toString(16); // Generate random color
+            event.target.style.backgroundColor = `#${randomColor}`;
         });
     });
 }
